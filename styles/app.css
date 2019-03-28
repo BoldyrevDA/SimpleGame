@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    overflow: hidden;
+    font-family: Ubuntu;
+}
+
+#menu {
+    text-align: center;
+    background: #9dc;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30vh;
+    z-index: 10;
+}
+
+#menu h1 {
+    color: blue;
+}
+
+#menu button {
+    display: block;
+    width: 50vw;
+    padding: 20px;
+    margin: 10px auto;
+    background: #def;
+    border: 1px solid;
+    border-radius: 10px;
+    color: blue;
+}
+
+/* GAME */
+
+#game {
+    z-index: 0;
+}
+
+#canvas {
+    background: #9dc;
+    position: fixed;
+    top: 0; left: 0;
+}
+
+#deadline {
+    position: fixed;
+    width: 100vw;
+    top: 75vh;
+    left: 0;
+    height: 5px;
+    transition-duration: 200ms;
+}
+
+#controlWrapper {
+display: table;
+    width: 100vw;
+}
+
+#control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+}
+
+#control button {
+    width: 17vh;
+    height: 17vh;
+    margin: 1vmin;
+    border-radius: 50%;
+    border: none;
+    color: blue;
+    background: none;
+}
+
+#control #one {
+    color: transparent;
+}
+
+#control #two {
+    color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+#menu .hidden {
+    display: none;
+}
+
+.score {
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    right: 2px;
+    font-size: 1.2rem;
+}

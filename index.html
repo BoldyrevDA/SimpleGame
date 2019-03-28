@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="full-screen" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FirstApp</title>
+    <link rel="stylesheet" href="styles/app.css" type="text/css">
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <h1>FirstApp</h1>
+        <button onclick="new_game()">New Game</button>
+        <button id="continue" class="hidden" onclick="continue_game()">Continue</button>
+        <button onclick="AndroidFunction.exit();">Exit</button>
+    </div>
+
+    <div id="game">
+        <canvas id="canvas"></canvas>
+        <div id="deadline"></div>
+        <div id="control">
+            <button id="one" onclick="set('one')">.</button>
+            <button id="" onclick="pause()">PAUSE</button>
+            <button id="two" onclick="set('two')">.</button>
+        </div>
+    </div>
+
+    <p class="score">score: <span id="score">0</span></p>
+    <script type="text/javascript" charset="utf-8">
+        init();
+    </script>
+</body>
+</html>
